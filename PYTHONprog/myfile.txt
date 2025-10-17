@@ -1,0 +1,2 @@
+Hey Bro, myfile.txt content has wiped out 	 I'm just getting appended
+ I'm the new way of appending
