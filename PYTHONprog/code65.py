@@ -13,9 +13,9 @@ class Math:
         self.num = self.num + n
     
     @staticmethod
-    def add(a, b):
-        return a + b
-
+    def add(num, n):
+        return num * n
+    
 a = Math(4)
 print(a.num)
 a.addtoNum(6)
@@ -23,3 +23,6 @@ print(a.num)
 
 print(a.add(4,3))
 print(Math.add(4,3))
+
+
+
