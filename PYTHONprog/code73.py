@@ -74,4 +74,5 @@ class People:
         print(f"This is {self.name}, from {self.region}")
 
 e = People("Alex", "Mexico")
-e()
+e() # so the thing written on the __call__ function would return
+#this is how you can call function
