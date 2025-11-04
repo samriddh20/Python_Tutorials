@@ -26,3 +26,20 @@ print(type(v1+v2))
 
 # refer to this page for more info
 # https://docs.python.org/3/library/operator.html
+
+# class ComplexNum:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+    
+#     def __str__(self):
+#         return f"{self.x} + {self.y}i"
+
+#     def __add__(self, a):
+#         return complex(self.x + a.x, self.y + a.y)
+# c1 = ComplexNum(3, 4)
+# print(c1)
+# c2 = ComplexNum(4, 5)
+# print(c2)
+
+# print(c1+c2)
