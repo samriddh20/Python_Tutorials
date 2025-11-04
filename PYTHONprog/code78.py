@@ -15,8 +15,19 @@ class Dog(Animal):
     def make_sound(self):
         print("Bark!")
 
+class Cat(Animal):
+    def __init__(self, name, breed):
+        Animal.__init__(self, name, species= "Cat")
+        self.breed = breed
+    
+    def make_sound(self):
+        print("Meow!")
+
 a = Dog("Bruno", "Germen Shepherd")
 a.make_sound()
+
+c = Cat("Ira", "Persian")
+c.make_sound()
 
 b = Animal("Sunny", "Dog")
 b.make_sound()
