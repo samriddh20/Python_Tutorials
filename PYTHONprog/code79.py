@@ -19,13 +19,13 @@ class salesEmployee(Employee, sales):
         self.designation = designation
     
     def __str__(self):
-        return f"This is {self.name}, the {self.designation}."
+        return f"This is {self.name}, who will be our new {self.designation}."
     
 a = salesEmployee("Mark", "Sales Manager")
 print(a)
 a.show() # --> whichever parent class you put first will print their method
 
-# another example
+# another example for multiple inheritence
 # class Animal:
 #     def __init__(self, name, species):
 #         self.name = name
@@ -39,7 +39,7 @@ a.show() # --> whichever parent class you put first will print their method
 #         self.name = name
 #         self.fur_color = fur_color
 
-# class Dog(Animal, Mammal):
+# class Dog(Animal, Mammal):  # --> whichever is placed in a first position, will get the priority over functions
 #     def __init__(self, name, breed, fur_color):
 #         Animal.__init__(self, name, species = "Dog")
 #         Mammal.__init__(self, name, fur_color)
