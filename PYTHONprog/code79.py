@@ -26,27 +26,27 @@ print(a)
 a.show() # --> whichever parent class you put first will print their method
 
 # another example
-class Animal:
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
+# class Animal:
+#     def __init__(self, name, species):
+#         self.name = name
+#         self.species = species
     
-    def make_sound(self):
-        print("Sound made by the Animal!")
+#     def make_sound(self):
+#         print("Sound made by the Animal!")
 
-class Mammal:
-    def __init__(self, name, fur_color):
-        self.name = name
-        self.fur_color = fur_color
+# class Mammal:
+#     def __init__(self, name, fur_color):
+#         self.name = name
+#         self.fur_color = fur_color
 
-class Dog(Animal, Mammal):
-    def __init__(self, name, breed, fur_color):
-        Animal.__init__(self, name, species = "Dog")
-        Mammal.__init__(self, name, fur_color)
-        self.breed = breed
+# class Dog(Animal, Mammal):
+#     def __init__(self, name, breed, fur_color):
+#         Animal.__init__(self, name, species = "Dog")
+#         Mammal.__init__(self, name, fur_color)
+#         self.breed = breed
 
-    def make_sound(self):
-        print("Bark!")
+#     def make_sound(self):
+#         print("Bark!")
 
-a = Dog("Trigger", "Labrador", "White")
-a.make_sound()
+# a = Dog("Trigger", "Labrador", "White")
+# a.make_sound()
